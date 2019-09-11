@@ -1,4 +1,4 @@
 #####
 > git add .
-> git commit -m 'up'
+> git commit -m up
 > git push
