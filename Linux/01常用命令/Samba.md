@@ -12,15 +12,16 @@
 
 ### 命令的常用方法
 
-Linux系统用户
-	添加系统用户：useradd ****
-	删除系统用户：userdel -r *****	
-	给新创建的用户设置密码：  passwd ****
-	创建组：groupadd xzgroup
-	创建组密码：gpasswd ****
-	将用户添加到组：gpasswd -a [xzdoc] [xzgroup]
-	查看用户：cat /etc/passwd
-	查看用户组：cat /etc/group
+#### Linux系统用户
+
+添加系统用户：useradd 
+删除系统用户：userdel -r *****	
+给新创建的用户设置密码：  passwd 
+创建组：groupadd xzgroup
+创建组密码：gpasswd 
+将用户添加到组：gpasswd -a [xzdoc] [xzgroup]
+查看用户：cat /etc/passwd
+查看用户组：cat /etc/group
 	
 
 ### smbpasswd命令的常用方法：
@@ -37,17 +38,22 @@ smbpasswd -n 	把用户的密码设置成空. 要在global中写入 null passwor
 
 smbpasswd -x 	删除用户
 
-
 创建文件夹：mkdir -p /mnt/xzdoc/doc/123
+
 赋予权限：chmod -R 777 /mnt/xzdoc/doc/123
 
-
 -rw------- (600)    只有拥有者有读写权限。
+
 -rw-r--r-- (644)    只有拥有者有读写权限；而属组用户和其他用户只有读权限。
+
 -rwx------ (700)    只有拥有者有读、写、执行权限。
+
 -rwxr-xr-x (755)    拥有者有读、写、执行权限；而属组用户和其他用户只有读、执行权限。
+
 -rwx--x--x (711)    拥有者有读、写、执行权限；而属组用户和其他用户只有执行权限。
+
 -rw-rw-rw- (666)    所有用户都有文件读、写权限。
+
 -rwxrwxrwx (777)    所有用户都有读、写、执行权限。
 
 
