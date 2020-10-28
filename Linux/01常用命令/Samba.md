@@ -15,16 +15,23 @@
 #### Linux系统用户
 
 添加系统用户：useradd 
+
 删除系统用户：userdel -r *****	
+
 给新创建的用户设置密码：  passwd 
+
 创建组：groupadd xzgroup
+
 创建组密码：gpasswd 
+
 将用户添加到组：gpasswd -a [xzdoc] [xzgroup]
+
 查看用户：cat /etc/passwd
+
 查看用户组：cat /etc/group
 	
 
-### smbpasswd命令的常用方法：
+#### smbpasswd命令的常用方法：
 
 pdbedit -L			查看用户
 
@@ -37,6 +44,8 @@ smbpasswd -e 	恢复用户，解冻用户，让冻结的用户可以在使用
 smbpasswd -n 	把用户的密码设置成空. 要在global中写入 null passwords -true
 
 smbpasswd -x 	删除用户
+
+#### 设置文件权限
 
 创建文件夹：mkdir -p /mnt/xzdoc/doc/123
 
